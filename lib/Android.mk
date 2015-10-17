@@ -8,3 +8,9 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := liblz4
 LOCAL_SRC_FILES := $(liblz4_src_files)
 include $(BUILD_HOST_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := liblz4-static
+LOCAL_SRC_FILES := $(liblz4_src_files)
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_STATIC_LIBRARY)
